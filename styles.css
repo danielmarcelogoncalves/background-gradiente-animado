@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.texto {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 2rem 4rem;
+}
+
+.gradiente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(45deg, #0e5b9f, #0d869e, #ac1313, #ff0505);
+    background-size: 400% 400%;
+    animation: colors 15s ease infinite;
+}
+
+
+/* Esse é o código que da movimento ao gradiente */
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .texto  {
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    
+}
